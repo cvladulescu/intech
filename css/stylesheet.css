@@ -135,6 +135,7 @@ background: url('../images/arrow-left.png');
 width: 15px;
  height: 32px;
  background-repeat:no-repeat;
+ cursor:pointer;
 }
 .copyright {
  padding-left:0px;
@@ -149,6 +150,7 @@ width: 15px;
 width: 15px;
  height: 32px;
  background-repeat:no-repeat;
+ cursor:pointer;
 }
  .arrow-left, .arrow-right {
  display: block;
@@ -196,6 +198,10 @@ input[type=radio] + label, input[type=checkbox] + label {
 		   float:right;
 		   margin-top:20px;
 	}
+	.padding-fix{
+	
+      padding-left: 15px;
+}
 }
 @media only screen and (min-width: 100px) and (max-width: 322px) {
 	/* For iPhone 5 */
@@ -290,7 +296,7 @@ body {
 .display-flex{
 	display: flex;
   height: 100%;
-}
+}	
 header {
 	padding-top:10px;
 }
