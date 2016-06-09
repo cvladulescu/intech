@@ -218,6 +218,10 @@ input[type=radio] + label, input[type=checkbox] + label {
 		   margin-top:20px;
 		   margin-right:50px;
 	}
+	.content{
+		
+  flex-flow: column;
+	}
 }
 body {
 	background-image: url('../images/background.jpg');
@@ -242,6 +246,10 @@ body {
 .content {
 	margin: 0 auto;
 	max-width: 1100px;
+}
+.display-flex{
+	display: flex;
+  height: 100%;
 }
 header {
 	padding-top:10px;
@@ -484,6 +492,7 @@ p {
 .bottom-content {
 	background-color:#ffffff;
 	width:100%;
+	flex: 1 1 auto;
 }
 .product-title {
 	padding:0 20px;
