@@ -61,6 +61,7 @@ width: 100%;
 }
  .box-products {
  width:100%;
+ padding-right:15px;
 }
 .slide-img {
  padding-right:0px;
@@ -68,8 +69,9 @@ width: 100%;
  .slide {
  padding:15px;
 }
+
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
  .box-products {
  width:100%;
  padding-right:15px;
@@ -77,8 +79,12 @@ width: 100%;
  .left-text {
  width:100%;
 }
+.content{
+		
+  flex-flow: column;
+	}
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     /* For desktop: */
     .col-1 {
 width: 8.33%;
@@ -191,7 +197,41 @@ input[type=radio] + label, input[type=checkbox] + label {
 		   margin-top:20px;
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 100px) and (max-width: 322px) {
+	/* For iPhone 5 */
+	input[type=radio] + label, input[type=checkbox] + label {
+		display:inline-block;
+		background-image: url('../images/radio-unchecked.png');
+		width:18px;
+		   height:18px;
+		   float:right;
+		   margin-top:20px;		   
+		   margin-right:10px;
+	}
+
+	 input[type=radio]:checked + label, input[type=checkbox]:checked + label{
+		   background-image: url('../images/radio-checked.png');
+		   background-repeat:no-repeat;
+		   width:18px;
+		   height:18px;
+		   float:right;
+		   margin-top:20px;
+		   margin-right:10px;
+	}
+	.content{
+		
+  flex-flow: column;
+	}
+	    [class*="col-"] {
+ width: 100%;
+}
+ .arrow-left, .arrow-right {
+ display:none;
+}
+	
+}
+
+@media only screen and (max-width: 775px) and (min-width: 322px) {
     /* For mobile phones: */
     [class*="col-"] {
  width: 100%;
